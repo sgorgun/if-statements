@@ -10,7 +10,8 @@
             {
                 return 0 - i;
             }
-            else if (i < -5)
+
+            if (i < -5)
             {
                 return 0 - (i * i);
             }
@@ -20,18 +21,17 @@
 
         public static int DoSomething2(int i)
         {
-            int result = i;
-
             if (i < 0 && i >= -5)
             {
                 return 0 - i;
             }
-            else if (i < -5)
+
+            if (i < -5)
             {
                 return 0 - (i * i);
             }
 
-            return result;
+            return i;
         }
     }
 }
